@@ -5,4 +5,6 @@ const createWindow =() => {
     });
     win.loadFile('index.html');
 }
-app.createWindow;
+app.whenReady().then(() => {
+    createWindow();
+});
